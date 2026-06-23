@@ -319,9 +319,21 @@ struct ShotActions: View {
         HStack(spacing: 12) {
             Button("Reveal") { NSWorkspace.shared.activateFileViewerSelecting([shot.currentPath]) }
                 .buttonStyle(.borderless).font(.caption)
+            Button("Copy") { copyToClipboard() }
+                .buttonStyle(.borderless).font(.caption)
             Button("Revert") { store.revert(shot) }
                 .buttonStyle(.borderless).font(.caption).foregroundStyle(.orange)
         }
+    }
+
+    /// Copy the screenshot to the clipboard — as both the file and the image,
+    /// so it pastes into Finder/Mail (file) or image editors (picture).
+    private func copyToClipboard() {
+        let pb = NSPasteboard.general
+        pb.clearContents()
+        var items: [NSPasteboardWriting] = [shot.currentPath as NSURL]
+        if let image = NSImage(contentsOf: shot.currentPath) { items.append(image) }
+        pb.writeObjects(items)
     }
 }
 

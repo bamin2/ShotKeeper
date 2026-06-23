@@ -14,9 +14,22 @@
 		50ED949E2FE9E65100B061C3 /* ShotKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShotKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		50ED94C32FEA0C4900B061C3 /* Exceptions for "ShotKeeper" folder in "ShotKeeper" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 50ED949D2FE9E65100B061C3 /* ShotKeeper */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		50ED94A02FE9E65100B061C3 /* ShotKeeper */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				50ED94C32FEA0C4900B061C3 /* Exceptions for "ShotKeeper" folder in "ShotKeeper" target */,
+			);
 			path = ShotKeeper;
 			sourceTree = "<group>";
 		};
@@ -253,12 +266,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = FGG7AD83LN;
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShotKeeper/Info.plist;
 				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSAppleEventsUsageDescription = "ShotKeeper renames the image files you select in Finder.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -286,12 +300,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = FGG7AD83LN;
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShotKeeper/Info.plist;
 				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSAppleEventsUsageDescription = "ShotKeeper renames the image files you select in Finder.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
