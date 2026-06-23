@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>ShotKeeper</title>
+    <link>https://bamin2.github.io/ShotKeeper/appcast.xml</link>
+    <description>Updates for ShotKeeper</description>
+    <language>en</language>
+    <!--
+      No releases published yet, so Sparkle will report "you're up to date".
+      When you cut a release, run `generate_appcast docs/` to add a signed
+      <item> here automatically (see ../ShotKeeper/sparkle/SPARKLE-SETUP.md).
+    -->
+  </channel>
+</rss>

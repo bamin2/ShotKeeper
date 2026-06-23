@@ -6,6 +6,10 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		50ED94C12FEA073F00B061C3 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 50ED94C02FEA073F00B061C3 /* Sparkle */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		50ED949E2FE9E65100B061C3 /* ShotKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShotKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -22,6 +26,7 @@
 		50ED949B2FE9E65100B061C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				50ED94C12FEA073F00B061C3 /* Sparkle in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -60,6 +65,9 @@
 				50ED94A02FE9E65100B061C3 /* ShotKeeper */,
 			);
 			name = ShotKeeper;
+			packageProductDependencies = (
+				50ED94C02FEA073F00B061C3 /* Sparkle */,
+			);
 			productName = ShotKeeper;
 			productReference = 50ED949E2FE9E65100B061C3 /* ShotKeeper.app */;
 			productType = "com.apple.product-type.application";
@@ -88,6 +96,9 @@
 			);
 			mainGroup = 50ED94952FE9E65100B061C3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				50ED94BF2FEA073F00B061C3 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 50ED949F2FE9E65100B061C3 /* Products */;
 			projectDirPath = "";
@@ -244,11 +255,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FGG7AD83LN;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "ShotKeeper renames the image files you select in Finder.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -276,11 +288,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FGG7AD83LN;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "ShotKeeper renames the image files you select in Finder.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -319,6 +332,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50ED94BF2FEA073F00B061C3 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50ED94C02FEA073F00B061C3 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50ED94BF2FEA073F00B061C3 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50ED94962FE9E65100B061C3 /* Project object */;
 	validationLevel = 1;
