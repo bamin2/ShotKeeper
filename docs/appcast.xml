@@ -1,16 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"
-     xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <channel>
-    <title>ShotKeeper</title>
-    <link>https://bamin2.github.io/ShotKeeper/appcast.xml</link>
-    <description>Updates for ShotKeeper</description>
-    <language>en</language>
-    <!--
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>ShotKeeper</title>
+        <link>https://bamin2.github.io/ShotKeeper/appcast.xml</link>
+        <description>Updates for ShotKeeper</description>
+        <language>en</language>
+        <!--
       No releases published yet, so Sparkle will report "you're up to date".
       When you cut a release, run `generate_appcast docs/` to add a signed
       <item> here automatically (see ../ShotKeeper/sparkle/SPARKLE-SETUP.md).
     -->
-  </channel>
+        <item>
+            <title>1.0</title>
+            <pubDate>Tue, 23 Jun 2026 11:49:33 +0300</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://bamin2.github.io/ShotKeeper/ShotKeeper-1.0.zip" length="1955981" type="application/octet-stream" sparkle:edSignature="6Y7H5EowroJZeolZgW9oxUoQMjTJnCB7CSh3Qr/AAsrgBxDWmNJl6ClCQpuEjVSwGESOgJPrfLuZyQH0u7efCA=="/>
+        </item>
+    </channel>
 </rss>
